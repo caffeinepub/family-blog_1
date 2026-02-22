@@ -1,10 +1,9 @@
 # Specification
 
 ## Summary
-**Goal:** Update the application title from "Family Blog" to "Family Journey".
+**Goal:** Update the application title to "Family Journey".
 
 **Planned changes:**
-- Update the HTML document title in frontend/index.html to "Family Journey"
-- Update the header banner or main heading in the Layout component to display "Family Journey"
+- Change the application title from the current name to "Family Journey"
 
-**User-visible outcome:** Users will see "Family Journey" as the browser tab title and as the main application header across all pages.
+**User-visible outcome:** The application displays "Family Journey" as its title throughout the interface.

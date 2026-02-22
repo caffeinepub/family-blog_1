@@ -5,24 +5,7 @@
   "architectural_notes": [],
   "known_issues": [],
   "isFixRequest": false,
-  "existing_features": [
-    {
-      "id": "feature-update-the-html-document-title-in-frontend-index-html-from-family-blog-to-family-journey",
-      "title": "Update the HTML document title in frontend/index.html from 'Family Blog' to 'Family Journey'",
-      "reqIds": [
-        "REQ-1"
-      ],
-      "version": 1
-    },
-    {
-      "id": "feature-update-the-header-banner-or-main-heading-in-the-layout-component-to-display-family-journey-instead-of-any-existing-title-text",
-      "title": "Update the header banner or main heading in the Layout component to display 'Family Journey' instead of any existing title text",
-      "reqIds": [
-        "REQ-2"
-      ],
-      "version": 1
-    }
-  ],
+  "existing_features": [],
   "new_feature_requests": [],
   "projectName": "Family Journey",
   "clarification_mode": "instant",

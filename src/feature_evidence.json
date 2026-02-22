@@ -1,41 +1,4 @@
 {
   "kind": "feature_evidence_report",
-  "features": [
-    {
-      "featureId": "feature-update-the-html-document-title-in-frontend-index-html-from-family-blog-to-family-journey",
-      "featureTitle": "Update the HTML document title in frontend/index.html from 'Family Blog' to 'Family Journey'",
-      "files": [
-        "frontend/index.html"
-      ],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
-      ],
-      "testIds": [
-        "REQ-1"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-update-the-header-banner-or-main-heading-in-the-layout-component-to-display-family-journey-instead-of-any-existing-title-text",
-      "featureTitle": "Update the header banner or main heading in the Layout component to display 'Family Journey' instead of any existing title text",
-      "files": [
-        "frontend/src/components/Layout.tsx"
-      ],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
-      ],
-      "testIds": [
-        "REQ-2"
-      ],
-      "confidence": "high"
-    }
-  ]
+  "features": []
 }

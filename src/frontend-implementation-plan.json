@@ -1,35 +1,26 @@
 {
   "kind": "implementation_plan",
   "version": "1.0",
-  "title": "Change application title to Family Journey",
+  "title": "Update title to Family Journey",
   "requirements": [
     {
       "id": "REQ-1",
-      "summary": "Update the HTML document title to 'Family Journey'",
+      "summary": "Update application title to Family Journey across all frontend assets",
       "acceptanceCriteria": [
         "The browser tab displays 'Family Journey' as the page title",
-        "The title tag in index.html contains 'Family Journey'"
+        "The navigation header shows 'Family Journey' as the application name",
+        "All references to the previous title are replaced"
       ],
       "file_operations": [
         {
           "path": "frontend/index.html",
           "operation": "modify",
-          "description": "Change the <title> tag content from 'Family Blog' to 'Family Journey' to update the browser tab title"
-        }
-      ]
-    },
-    {
-      "id": "REQ-2",
-      "summary": "Update the main header to display 'Family Journey'",
-      "acceptanceCriteria": [
-        "The main application header visibly shows 'Family Journey' to users",
-        "The title change is consistent across all pages using the Layout component"
-      ],
-      "file_operations": [
+          "description": "Update the <title> tag to 'Family Journey' to reflect the new application name in the browser tab"
+        },
         {
           "path": "frontend/src/components/Layout.tsx",
           "operation": "modify",
-          "description": "Update any header text or title displayed in the Layout component to show 'Family Journey' instead of the existing title, ensuring the change appears on all pages that use this layout wrapper"
+          "description": "Update the navigation header text from any existing title to 'Family Journey' to ensure consistent branding throughout the application"
         }
       ]
     }

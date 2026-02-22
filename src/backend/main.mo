@@ -8,8 +8,6 @@ import Runtime "mo:core/Runtime";
 import Int "mo:core/Int";
 import Iter "mo:core/Iter";
 
-
-
 actor {
   type Comment = {
     authorName : Text;

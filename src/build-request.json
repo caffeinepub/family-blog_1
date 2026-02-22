@@ -1,50 +1,11 @@
 {
   "kind": "build_request",
-  "title": "Change application title to Family Journey",
+  "title": "Update title to Family Journey",
   "projectName": "Family Journey",
   "priority": "normal",
-  "requirements": [
-    {
-      "id": "REQ-1",
-      "text": "Update the HTML document title in frontend/index.html from 'Family Blog' to 'Family Journey'",
-      "target": "frontend",
-      "source": {
-        "messageIds": [
-          "msg-user-final"
-        ],
-        "quotes": [
-          "change the title to \"Family Journey\""
-        ]
-      },
-      "acceptanceCriteria": [
-        "The browser tab displays 'Family Journey' as the page title",
-        "The title tag in index.html contains 'Family Journey'"
-      ]
-    },
-    {
-      "id": "REQ-2",
-      "text": "Update the header banner or main heading in the Layout component to display 'Family Journey' instead of any existing title text",
-      "target": "frontend",
-      "source": {
-        "messageIds": [
-          "msg-user-final"
-        ],
-        "quotes": [
-          "change the title to \"Family Journey\""
-        ]
-      },
-      "acceptanceCriteria": [
-        "The main application header visibly shows 'Family Journey' to users",
-        "The title change is consistent across all pages using the Layout component"
-      ]
-    }
-  ],
+  "requirements": [],
   "constraints": [],
-  "nonGoals": [
-    "Changing the color scheme or visual styling",
-    "Modifying backend logic or data structures",
-    "Altering any functionality beyond the title text"
-  ],
+  "nonGoals": [],
   "imageRequirements": {
     "required": [],
     "edits": []
