@@ -1,0 +1,196 @@
+{
+  "kind": "build_request",
+  "title": "Add like and comment functionality to blog posts",
+  "projectName": "Family Blog",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "Add a like counter to each blog post that tracks the total number of likes",
+      "target": "backend",
+      "source": {
+        "messageIds": [
+          "msg-10"
+        ],
+        "quotes": [
+          "can we let people like and comment on blog posts?"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Each post has a likes field that stores the current like count",
+        "Like count persists across canister upgrades",
+        "Like count starts at 0 for new posts"
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "text": "Implement backend function to increment the like count for a blog post",
+      "target": "backend",
+      "source": {
+        "messageIds": [
+          "msg-10"
+        ],
+        "quotes": [
+          "can we let people like and comment on blog posts?"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Function accepts a post ID and increments its like count by 1",
+        "Function returns updated like count",
+        "Function handles non-existent post IDs gracefully"
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "text": "Add a comments array to each blog post that stores comment data including author name, content, and timestamp",
+      "target": "backend",
+      "source": {
+        "messageIds": [
+          "msg-10"
+        ],
+        "quotes": [
+          "can we let people like and comment on blog posts?"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Each post has a comments field that is an array of comment objects",
+        "Each comment includes author name, content text, and timestamp",
+        "Comments persist across canister upgrades",
+        "Comments array starts empty for new posts"
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "text": "Implement backend function to add a new comment to a blog post",
+      "target": "backend",
+      "source": {
+        "messageIds": [
+          "msg-10"
+        ],
+        "quotes": [
+          "can we let people like and comment on blog posts?"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Function accepts post ID, author name, and comment content",
+        "Function adds comment with current timestamp to the post's comments array",
+        "Function returns success confirmation",
+        "Function handles non-existent post IDs gracefully"
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "text": "Display like count and like button on the post detail page",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-10"
+        ],
+        "quotes": [
+          "can we let people like and comment on blog posts?"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Like count is visible on the post detail page",
+        "Like button is clickable and updates the like count immediately",
+        "Like count updates optimistically in the UI while backend processes the request",
+        "Button is styled consistently with the warm family-friendly design theme"
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "text": "Display all comments for a blog post on the post detail page in chronological order",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-10"
+        ],
+        "quotes": [
+          "can we let people like and comment on blog posts?"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Comments section appears on the post detail page below the post content",
+        "Each comment shows author name, content, and formatted timestamp",
+        "Comments are sorted from oldest to newest",
+        "Empty state message appears when there are no comments yet"
+      ]
+    },
+    {
+      "id": "REQ-7",
+      "text": "Add a comment form on the post detail page allowing users to submit new comments",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-10"
+        ],
+        "quotes": [
+          "can we let people like and comment on blog posts?"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Form includes fields for author name and comment content",
+        "Form validates that both fields are filled before submission",
+        "Submit button is disabled during submission",
+        "Form clears after successful comment submission",
+        "New comment appears immediately in the comments list after submission"
+      ]
+    },
+    {
+      "id": "REQ-8",
+      "text": "Display like count preview on the home page for each blog post",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-10"
+        ],
+        "quotes": [
+          "can we let people like and comment on blog posts?"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Each post card on the home page shows its like count",
+        "Like count is displayed with an appropriate icon or label",
+        "Like count updates when user returns from post detail page"
+      ]
+    },
+    {
+      "id": "REQ-9",
+      "text": "Create React Query hooks for like and comment operations with automatic cache invalidation",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-10"
+        ],
+        "quotes": [
+          "can we let people like and comment on blog posts?"
+        ]
+      },
+      "acceptanceCriteria": [
+        "useLikePost hook triggers mutation and invalidates post queries on success",
+        "useAddComment hook triggers mutation and invalidates post queries on success",
+        "Both hooks follow the same pattern as existing mutation hooks in useQueries.ts"
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not modify Internet Identity hooks (frontend/src/hooks/useInternetIdentity.ts, useInternetIdentity.tsx)",
+    "Do not modify useActor.ts hook",
+    "Do not modify main.tsx",
+    "Do not modify any files in frontend/src/components/ui",
+    "Maintain single-actor architecture in backend/main.mo",
+    "Use existing warm coral/peach color palette defined in index.css"
+  ],
+  "nonGoals": [
+    "User authentication for liking or commenting",
+    "Ability to edit or delete comments",
+    "Ability to unlike a post",
+    "Spam protection or rate limiting",
+    "Comment moderation features",
+    "Nested replies or comment threading"
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}
