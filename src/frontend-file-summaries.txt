@@ -1,6 +1,6 @@
 {
   "frontend/src/App.tsx": "Main application component that sets up TanStack Router with routes for home, post detail, create post, and edit post pages, all wrapped in a Layout component.",
-  "frontend/src/components/Layout.tsx": "Layout wrapper component providing consistent structure with header banner image, navigation bar, main content area with Outlet for child routes, and footer with attribution.",
+  "frontend/src/components/Layout.tsx": "Layout wrapper component providing consistent structure with header banner image, navigation bar displaying \"Family Journey\" title, main content area with Outlet for child routes, and footer with attribution.",
   "frontend/src/pages/HomePage.tsx": "Home page displaying all blog posts in reverse chronological order with post previews, like counts, and a button to create new posts.",
   "frontend/src/pages/PostDetailPage.tsx": "Post detail page showing full blog post content with metadata, like button with count, comments list, comment form, and edit/delete action buttons.",
   "frontend/src/pages/CreatePostPage.tsx": "Form page for creating new blog posts with fields for title, author name, and content, including validation and submission handling.",
@@ -10,5 +10,6 @@
   "frontend/src/index.css": "Global styles with warm coral/peach OKLCH color palette for light and dark modes, serif fonts for body text, sans-serif for headings, and custom coral utility classes.",
   "frontend/tailwind.config.js": "Tailwind configuration extended with warm color tokens (coral, peach, cream), custom font families (Inter sans, Georgia serif), and warm shadow utilities.",
   "frontend/src/components/CommentsList.tsx": "Component that displays a list of comments with author name, timestamp, and content, showing an empty state when no comments exist.",
-  "frontend/src/components/CommentForm.tsx": "Form component for submitting new comments with fields for author name and content, including validation and loading states."
+  "frontend/src/components/CommentForm.tsx": "Form component for submitting new comments with fields for author name and content, including validation and loading states.",
+  "frontend/index.html": "HTML entry point with updated page title \"Family Journey\" displayed in the browser tab."
 }

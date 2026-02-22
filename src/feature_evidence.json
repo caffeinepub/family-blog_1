@@ -2,10 +2,10 @@
   "kind": "feature_evidence_report",
   "features": [
     {
-      "featureId": "feature-display-like-count-and-like-button-on-the-post-detail-page",
-      "featureTitle": "Display like count and like button on the post detail page",
+      "featureId": "feature-update-the-html-document-title-in-frontend-index-html-from-family-blog-to-family-journey",
+      "featureTitle": "Update the HTML document title in frontend/index.html from 'Family Blog' to 'Family Journey'",
       "files": [
-        "frontend/src/pages/PostDetailPage.tsx"
+        "frontend/index.html"
       ],
       "components": [
         "core-infrastructure@1.0.2",
@@ -15,16 +15,15 @@
         "github-export-icp-cli@1.0.0"
       ],
       "testIds": [
-        "REQ-5"
+        "REQ-1"
       ],
       "confidence": "high"
     },
     {
-      "featureId": "feature-display-all-comments-for-a-blog-post-on-the-post-detail-page-in-chronological-order",
-      "featureTitle": "Display all comments for a blog post on the post detail page in chronological order",
+      "featureId": "feature-update-the-header-banner-or-main-heading-in-the-layout-component-to-display-family-journey-instead-of-any-existing-title-text",
+      "featureTitle": "Update the header banner or main heading in the Layout component to display 'Family Journey' instead of any existing title text",
       "files": [
-        "frontend/src/components/CommentsList.tsx",
-        "frontend/src/pages/PostDetailPage.tsx"
+        "frontend/src/components/Layout.tsx"
       ],
       "components": [
         "core-infrastructure@1.0.2",
@@ -34,62 +33,7 @@
         "github-export-icp-cli@1.0.0"
       ],
       "testIds": [
-        "REQ-6"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-add-a-comment-form-on-the-post-detail-page-allowing-users-to-submit-new-comments",
-      "featureTitle": "Add a comment form on the post detail page allowing users to submit new comments",
-      "files": [
-        "frontend/src/components/CommentForm.tsx",
-        "frontend/src/pages/PostDetailPage.tsx"
-      ],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
-      ],
-      "testIds": [
-        "REQ-7"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-display-like-count-preview-on-the-home-page-for-each-blog-post",
-      "featureTitle": "Display like count preview on the home page for each blog post",
-      "files": [
-        "frontend/src/pages/HomePage.tsx"
-      ],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
-      ],
-      "testIds": [
-        "REQ-8"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-create-react-query-hooks-for-like-and-comment-operations-with-automatic-cache-invalidation",
-      "featureTitle": "Create React Query hooks for like and comment operations with automatic cache invalidation",
-      "files": [
-        "frontend/src/hooks/useQueries.ts"
-      ],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
-      ],
-      "testIds": [
-        "REQ-9"
+        "REQ-2"
       ],
       "confidence": "high"
     }

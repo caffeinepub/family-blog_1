@@ -7,9 +7,9 @@ import Time "mo:core/Time";
 import Runtime "mo:core/Runtime";
 import Int "mo:core/Int";
 import Iter "mo:core/Iter";
-import Migration "migration";
 
-(with migration = Migration.run)
+
+
 actor {
   type Comment = {
     authorName : Text;

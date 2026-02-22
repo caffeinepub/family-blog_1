@@ -11,7 +11,7 @@ export default function Layout() {
       <header className="relative w-full overflow-hidden">
         <img
           src="/assets/generated/header-banner.dim_1200x300.png"
-          alt="Family Blog Header"
+          alt="Family Journey Header"
           className="w-full h-48 md:h-64 object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-background/20" />
@@ -27,7 +27,7 @@ export default function Layout() {
             className="text-lg font-semibold hover:bg-accent"
           >
             <Home className="mr-2 h-5 w-5" />
-            Our Family Blog
+            Family Journey
           </Button>
         </div>
       </nav>
@@ -41,7 +41,7 @@ export default function Layout() {
       <footer className="border-t border-border mt-16 py-8 bg-card/30">
         <div className="container mx-auto px-4 text-center text-sm text-muted-foreground">
           <p className="flex items-center justify-center gap-2">
-            © {new Date().getFullYear()} Our Family Blog • Built with{' '}
+            © {new Date().getFullYear()} Family Journey • Built with{' '}
             <Heart className="h-4 w-4 fill-coral text-coral inline" /> using{' '}
             <a
               href={`https://caffeine.ai/?utm_source=Caffeine-footer&utm_medium=referral&utm_content=${encodeURIComponent(window.location.hostname)}`}

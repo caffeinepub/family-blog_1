@@ -1,99 +1,35 @@
 {
   "kind": "implementation_plan",
   "version": "1.0",
-  "title": "Add like and comment functionality to blog posts",
+  "title": "Change application title to Family Journey",
   "requirements": [
     {
-      "id": "REQ-5",
-      "summary": "Display like count and like button on the post detail page",
+      "id": "REQ-1",
+      "summary": "Update the HTML document title to 'Family Journey'",
       "acceptanceCriteria": [
-        "Like count is visible on the post detail page",
-        "Like button is clickable and updates the like count immediately",
-        "Like count updates optimistically in the UI while backend processes the request",
-        "Button is styled consistently with the warm family-friendly design theme"
+        "The browser tab displays 'Family Journey' as the page title",
+        "The title tag in index.html contains 'Family Journey'"
       ],
       "file_operations": [
         {
-          "path": "frontend/src/pages/PostDetailPage.tsx",
+          "path": "frontend/index.html",
           "operation": "modify",
-          "description": "Add like button with heart icon and like count display below the post content. Implement optimistic updates using the useLikePost hook. Style the button with the warm coral/peach color palette from index.css. Display the generated heart icon from frontend/public/assets/generated/heart-icon.dim_64x64.png next to the like count."
+          "description": "Change the <title> tag content from 'Family Blog' to 'Family Journey' to update the browser tab title"
         }
       ]
     },
     {
-      "id": "REQ-6",
-      "summary": "Display all comments for a blog post on the post detail page in chronological order",
+      "id": "REQ-2",
+      "summary": "Update the main header to display 'Family Journey'",
       "acceptanceCriteria": [
-        "Comments section appears on the post detail page below the post content",
-        "Each comment shows author name, content, and formatted timestamp",
-        "Comments are sorted from oldest to newest",
-        "Empty state message appears when there are no comments yet"
+        "The main application header visibly shows 'Family Journey' to users",
+        "The title change is consistent across all pages using the Layout component"
       ],
       "file_operations": [
         {
-          "path": "frontend/src/components/CommentsList.tsx",
-          "operation": "create",
-          "description": "Create a component that accepts an array of comments and renders them in chronological order. Display author name, comment content, and formatted timestamp for each comment. Show an empty state message when no comments exist. Use Typography components from shadcn/ui for consistent styling with the warm family-friendly design theme."
-        },
-        {
-          "path": "frontend/src/pages/PostDetailPage.tsx",
+          "path": "frontend/src/components/Layout.tsx",
           "operation": "modify",
-          "description": "Import and render the CommentsList component below the like button section, passing the post's comments array. Ensure comments are displayed after the post content and like functionality."
-        }
-      ]
-    },
-    {
-      "id": "REQ-7",
-      "summary": "Add a comment form on the post detail page allowing users to submit new comments",
-      "acceptanceCriteria": [
-        "Form includes fields for author name and comment content",
-        "Form validates that both fields are filled before submission",
-        "Submit button is disabled during submission",
-        "Form clears after successful comment submission",
-        "New comment appears immediately in the comments list after submission"
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/components/CommentForm.tsx",
-          "operation": "create",
-          "description": "Create a form component with input fields for author name and comment content (textarea). Implement form validation requiring both fields. Use the useAddComment hook for submission with loading state management. Disable submit button during submission. Clear form fields after successful submission. Style using shadcn/ui form components and the warm coral/peach color palette from index.css."
-        },
-        {
-          "path": "frontend/src/pages/PostDetailPage.tsx",
-          "operation": "modify",
-          "description": "Import and render the CommentForm component below the CommentsList component. Pass the post ID to the form for comment submission."
-        }
-      ]
-    },
-    {
-      "id": "REQ-8",
-      "summary": "Display like count preview on the home page for each blog post",
-      "acceptanceCriteria": [
-        "Each post card on the home page shows its like count",
-        "Like count is displayed with an appropriate icon or label",
-        "Like count updates when user returns from post detail page"
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/pages/HomePage.tsx",
-          "operation": "modify",
-          "description": "Add like count display to each post card showing the number of likes with the heart icon from frontend/public/assets/generated/heart-icon.dim_64x64.png. Position the like count alongside the publication date and author information. Style consistently with the warm coral/peach color palette. The like count will automatically update when navigating back from the post detail page due to React Query cache invalidation."
-        }
-      ]
-    },
-    {
-      "id": "REQ-9",
-      "summary": "Create React Query hooks for like and comment operations with automatic cache invalidation",
-      "acceptanceCriteria": [
-        "useLikePost hook triggers mutation and invalidates post queries on success",
-        "useAddComment hook triggers mutation and invalidates post queries on success",
-        "Both hooks follow the same pattern as existing mutation hooks in useQueries.ts"
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/hooks/useQueries.ts",
-          "operation": "modify",
-          "description": "Add useLikePost mutation hook that calls actor.likePost with post ID, invalidates both getAllPosts and getPost queries on success, and supports optimistic updates. Add useAddComment mutation hook that calls actor.addComment with post ID, author name, and content, then invalidates both getAllPosts and getPost queries on success. Follow the existing mutation pattern used in useCreatePost, useUpdatePost, and useDeletePost hooks."
+          "description": "Update any header text or title displayed in the Layout component to show 'Family Journey' instead of the existing title, ensuring the change appears on all pages that use this layout wrapper"
         }
       ]
     }

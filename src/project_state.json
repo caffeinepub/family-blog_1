@@ -1,99 +1,30 @@
 {
   "schemaVersion": "1.0.0",
   "projectStateVersion": 3,
-  "summary": "Family blog with like and comment functionality",
+  "summary": "New project",
   "architectural_notes": [],
   "known_issues": [],
   "isFixRequest": false,
   "existing_features": [
     {
-      "id": "feature-display-like-count-and-like-button-on-the-post-detail-page",
-      "title": "Display like count and like button on the post detail page",
-      "reqIds": [
-        "REQ-5"
-      ],
-      "version": 1
-    },
-    {
-      "id": "feature-display-all-comments-for-a-blog-post-on-the-post-detail-page-in-chronological-order",
-      "title": "Display all comments for a blog post on the post detail page in chronological order",
-      "reqIds": [
-        "REQ-6"
-      ],
-      "version": 1
-    },
-    {
-      "id": "feature-add-a-comment-form-on-the-post-detail-page-allowing-users-to-submit-new-comments",
-      "title": "Add a comment form on the post detail page allowing users to submit new comments",
-      "reqIds": [
-        "REQ-7"
-      ],
-      "version": 1
-    },
-    {
-      "id": "feature-display-like-count-preview-on-the-home-page-for-each-blog-post",
-      "title": "Display like count preview on the home page for each blog post",
-      "reqIds": [
-        "REQ-8"
-      ],
-      "version": 1
-    },
-    {
-      "id": "feature-create-react-query-hooks-for-like-and-comment-operations-with-automatic-cache-invalidation",
-      "title": "Create React Query hooks for like and comment operations with automatic cache invalidation",
-      "reqIds": [
-        "REQ-9"
-      ],
-      "version": 1
-    }
-  ],
-  "new_feature_requests": [
-    {
-      "id": "AR-1",
-      "summary": "Add like functionality to blog posts",
-      "reqIds": [],
-      "status": "pending"
-    },
-    {
-      "id": "AR-2",
-      "summary": "Add comment functionality to blog posts",
-      "reqIds": [],
-      "status": "pending"
-    },
-    {
-      "id": "AR-3",
-      "summary": "Add a like counter to each blog post that tracks the total number of likes",
+      "id": "feature-update-the-html-document-title-in-frontend-index-html-from-family-blog-to-family-journey",
+      "title": "Update the HTML document title in frontend/index.html from 'Family Blog' to 'Family Journey'",
       "reqIds": [
         "REQ-1"
       ],
-      "status": "pending"
+      "version": 1
     },
     {
-      "id": "AR-4",
-      "summary": "Implement backend function to increment the like count for a blog post",
+      "id": "feature-update-the-header-banner-or-main-heading-in-the-layout-component-to-display-family-journey-instead-of-any-existing-title-text",
+      "title": "Update the header banner or main heading in the Layout component to display 'Family Journey' instead of any existing title text",
       "reqIds": [
         "REQ-2"
       ],
-      "status": "pending"
-    },
-    {
-      "id": "AR-5",
-      "summary": "Add a comments array to each blog post that stores comment data including author name, content, and timestamp",
-      "reqIds": [
-        "REQ-3"
-      ],
-      "status": "pending"
-    },
-    {
-      "id": "AR-6",
-      "summary": "Implement backend function to add a new comment to a blog post",
-      "reqIds": [
-        "REQ-4"
-      ],
-      "status": "pending"
+      "version": 1
     }
   ],
-  "projectName": "Family Blog",
+  "new_feature_requests": [],
+  "projectName": "Family Journey",
   "clarification_mode": "instant",
   "clarification_rounds": 0
 }
